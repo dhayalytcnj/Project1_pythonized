@@ -31,4 +31,4 @@ pip install findspark
 * Remove a row from the any Senario.
 
 ### Problem Scenario 6
-* Add future query. Please add visualization as well.
+* Add future query. Visualization added as Project1_Scenario6_visual.pdf
