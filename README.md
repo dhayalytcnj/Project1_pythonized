@@ -1,6 +1,12 @@
 # Project1 Pythonized
 Python version of Revature Big Data project 1
 
+You must have pyspark and findspark installed:
+```
+pip install pyspark
+pip install findspark
+```
+
 ### Problem Scenario 1 
 * What is the total number of consumers for Branch1?
 * What is the number of consumers for the Branch2?
