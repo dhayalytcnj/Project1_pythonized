@@ -112,7 +112,8 @@ class Main:
 
         spark.sql("drop view if exists growth19_20")
         spark.sql("drop view if exists growth20_21")
-        spark.sql("create view growth19_20 as (select (select sum(count) from count2020) - (select sum(count) from count2019) as diff)")
+        spark.sql("create view growth19_20 as "
+                   "(select (select sum(count) from count2020) - (select sum(count) from count2019) as diff)")
         spark.sql("create view growth20_21 as (select (select sum(count) from count2021) - (select sum(count) from count2020) as diff)")
 
         spark.sql("drop view if exists avg_growth")
@@ -165,5 +166,5 @@ class Main:
 if __name__ == '__main__':
     myProj = Main()
     myProj.start()
-    sys.exit
+    sys.exit()
     
